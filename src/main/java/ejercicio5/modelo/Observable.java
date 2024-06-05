@@ -10,7 +10,7 @@ public class Observable {
 		this.observadores = observadores;
 	}
 
-	public void notificar(float monto) {
+	protected void notificar(float monto) {
 		for (Observer observer : observadores) {
 			observer.actualizar(monto);
 		}
